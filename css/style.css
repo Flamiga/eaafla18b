@@ -1,0 +1,80 @@
+body {
+  background-color: lightblue;
+}
+
+#horse {
+  width: 70%;
+  position: relative;
+  -webkit-animation: heste 5s infinite;
+  /* Safari 4.0 - 8.0 */
+  animation: heste 5s infinite;
+  animation-delay: 2s;
+}
+
+@-webkit-keyframes heste {
+  from {
+    right: 0px;
+  }
+  to {
+    right: 2000px;
+  }
+}
+
+@keyframes heste {
+  from {
+    right: -200px;
+  }
+  to {
+    right: 200px;
+  }
+}
+
+#racehorse {
+  width: 70%;
+  position: relative;
+  -webkit-animation: heste 5s infinite;
+  /* Safari 4.0 - 8.0 */
+  animation: løbhest 3s infinite;
+}
+
+@-webkit-keyframes løbhest {
+  from {
+    right: 0px;
+  }
+  to {
+    right: 2000px;
+  }
+}
+
+@keyframes løbhest {
+  from {
+    right: -200px;
+  }
+  to {
+    right: 200px;
+  }
+}
+
+@keyframes overskrift {
+  from {
+    background-color: white;
+    font-size: 3rem;
+    width: 270px;
+  }
+  to {
+    background-color: darkblue;
+    font-size: 1rem;
+    width: 200px;
+  }
+}
+
+h1 {
+  font-family: monospace;
+  animation-name: overskrift;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+
+}
